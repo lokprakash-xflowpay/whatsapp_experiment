@@ -6,8 +6,8 @@ Refer to the [docs here for implementing your Flow Endpoint](https://developers.
 ```
 node src/keyGenerator.js {passphrase}
 ```
-4. Click on the file ".env" on the left sidebar, **then click on `✏️ Plain text` on top. Do not edit it directly from UI as it will break your key formatting.**
-5. Edit it with your private key and passphrase. Make sure a multiline key has the same line breaks like below. Env variables are only visible to the owner of the Glitch project. **Use a separate private key for testing only, and not your production key.**
+1. Click on the file ".env" on the left sidebar, **then click on `✏️ Plain text` on top. Do not edit it directly from UI as it will break your key formatting.**
+2. Edit it with your private key and passphrase. Make sure a multiline key has the same line breaks like below. Env variables are only visible to the owner of the Glitch project. **Use a separate private key for testing only, and not your production key.**
 ```
 PASSPHRASE="my-secret"
 
@@ -18,5 +18,5 @@ MIIE...
 -----[REPLACE THIS] END RSA PRIVATE KEY-----"
 ```
 
-7. Edit `src/flow.js` with your logic to navigate between the Flow screens.
-8. Click on the `Logs` tab at the bottom to view server logs. The logs section also has a button to attach a debugger via Chrome devtools.
+3. Edit `src/flow.js` with your logic to navigate between the Flow screens.
+4. Click on the `Logs` tab at the bottom to view server logs. The logs section also has a button to attach a debugger via Chrome devtools.
